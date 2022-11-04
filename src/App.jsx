@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import NavBar from './components/NavBar'
-import Home from './pages/Home'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Home />
       <Outlet />
+      <Footer />
     </div>
   )
 }

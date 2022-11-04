@@ -7,11 +7,11 @@ const MovieCard = ({ movie, showLink = true }) => {
   return (
     <div className='movieCard'>
        <img src={imageUrl + movie.poster_path} alt={movie.title} />
-        <h2>{movie.title}</h2>
+        <h2 className='queryText'>{movie.title}</h2>
         <p>
-            <FaStar /> {movie.vote_average}
-            {showLink && <Link to={`/movie/${movie.id}`}>Details</Link>}
-        </p>
+            <FaStar /> {movie.vote_average} </p>
+           <p>{showLink && <Link to={`/movie/${movie.id}`}> Details</Link>}</p> 
+       
     </div>
   )
 }
